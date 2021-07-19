@@ -1,0 +1,7 @@
+.section {
+  font-size: 20px;
+  border: teal 1px solid;
+  width: 800px;
+  margin: 0 auto 20px;
+  text-align: center;
+}

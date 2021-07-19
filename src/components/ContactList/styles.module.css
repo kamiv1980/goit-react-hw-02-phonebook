@@ -1,0 +1,13 @@
+.btnDelete {
+ height: 20px;
+ width: 60px;
+}
+.list{
+ width: 400px;
+ margin: 20px auto;
+}
+.item{
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+}
