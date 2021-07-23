@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./styles.module.css";
 import PropTypes from 'prop-types';
 
-const ContactList = ({deleteContact, list }) => {
+const ContactList = ({deleteContact,GetId, list }) => {
   return (
   <ul className={styles.list}>
     {list.map((item) => (
@@ -13,6 +13,9 @@ const ContactList = ({deleteContact, list }) => {
             <button  className={styles.btnDelete}
                      type="button"
                      onClick={() => deleteContact(item.id)}>Delete</button>
+            <button  className={styles.btnDelete}
+                     type="button"
+                     onClick={() => GetId(item.id,item.name,item.number)}>Edit</button>
         </li>
     ))}
   </ul>)
